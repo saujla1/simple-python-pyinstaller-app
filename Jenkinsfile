@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'pytest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
+                sh 'python3 -m pytest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
             }
         }
         stage('Deploy') {
