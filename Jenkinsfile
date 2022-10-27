@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'python3 -m py_compile sources/add2vals.py sources/calc.py'
-                sh 'pip install pytest'
+                sh 'python3 - m pip install pytest'
         
             }
         }
